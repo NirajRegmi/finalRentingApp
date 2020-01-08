@@ -75,3 +75,12 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 }
+
+.center{
+  position: absolute;
+  left: 50%;
+  top:40%;
+  -webkit-transform:translate(-49%,-49%) ;
+  transform: translate(-49%,-49%);
+  width:90%
+}

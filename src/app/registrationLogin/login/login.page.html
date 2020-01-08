@@ -1,0 +1,31 @@
+<ion-header no-border>
+  <div class="login-header ion-padding">
+    <img class="logo-img" src="../../../assets/images/logo1.png"  alt="logo">
+  </div>
+</ion-header>
+
+<ion-content>
+
+  <div class="center">
+    <div heading-column-lr>
+      <h1 big-heading>Login</h1>
+      
+    </div>
+    <ion-item transparent>
+      <img icon-small src="../../../assets/images/user.png" />
+      <ion-input [(ngModel)]="Email" placeholder="Username" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item transparent>
+      <img icon-small src="../../../assets/images/pass.png" />
+      <ion-input [(ngModel)]="Password" placeholder="Password" type="Password"></ion-input>
+    </ion-item>
+    <ion-label class="forget-password">Forget Password</ion-label>
+    <div linespace></div>
+    <ion-button color="primary" class="ion-button-class" shapr="round" fill="solid" size="large" expand="block"
+    (click)="LoginOTP()">Log In</ion-button>
+    <ion-label class="ion-text-center">Don't have an Account?<span class="link-button" (click)="Register()">Sign Up</span>
+    </ion-label>
+
+  </div>
+</ion-content>
